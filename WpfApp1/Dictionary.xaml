@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="Button">
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="Background" Value="#FFF1A2A2"/>
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="FontSize" Value="38"/>
+        <Setter Property="Foreground" Value="#453536"/>
+    </Style>
+    
+</ResourceDictionary>

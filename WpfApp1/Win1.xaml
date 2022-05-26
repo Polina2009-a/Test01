@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp1.Win1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Win1" Height="450" Width="800">
+    <Grid Background="#FFBBD3E6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="206*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0"  Margin="217,9,232,9">Изменение данных</Label>
+       
+        <Grid x:Name="res" Visibility="Hidden" Grid.Row="1" Grid.Column="0">
+            <ComboBox x:Name="id" HorizontalAlignment="Left" Width="161" DisplayMemberPath="ID" SelectedItem="ID" Margin="218,0,0,0">
+            </ComboBox>
+            <Button Content="Поиск" HorizontalAlignment="Right" Width="155"  Margin="0,0,217,0" FontSize="28" Click="Button_Click_1"></Button>
+        </Grid>
+        <Button HorizontalAlignment="Left" Width="186" Margin="0,0,0,25" Content="Назад" Click="Button_Click" FontSize="28"></Button>
+      
+        <Grid Visibility="Hidden" x:Name="data" Grid.Row="2" Grid.Column="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="57*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="86*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="245*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="149*"/>
+                <ColumnDefinition Width="147*"/>
+                <ColumnDefinition Width="251*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label FontSize="28" Grid.Column="3" Margin="0,-5,0,5">Name</Label>
+            <Label FontSize="28" Grid.Column="3" Margin="0,1,0,5" Grid.Row="1">Password</Label>
+            <Label FontSize="28" Grid.Column="3" Margin="0,0,10,29" Grid.Row="2">Status</Label>
+            <TextBox x:Name="Name" Grid.Column="4" Margin="5,10,5,5"/>
+            <TextBox x:Name="Password" Grid.Column="4" Margin="5,10" Grid.Row="1"/>
+            <ComboBox x:Name="Status" Grid.Column="4" Margin="5,10,5,33" Grid.Row="2">
+                <TextBlock FontSize="24">Admin</TextBlock>
+                <TextBlock FontSize="24">User</TextBlock>
+            </ComboBox>
+        </Grid>
+
+        <Button Visibility="Hidden"  x:Name="save_b" Grid.Row="3" Grid.Column="0" Content="Сохранить" FontSize="36" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Click="save_b_Click"></Button>
+        <Button Visibility="Hidden"  x:Name="del_b" Grid.Row="3" Grid.Column="0" Content="Удалить" FontSize="36" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Click="del_b_Click"></Button>
+        <Button Visibility="Hidden"  x:Name="add_b" Grid.Row="3" Grid.Column="0" Content="Добавить" FontSize="36" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Click="add_b_Click"></Button>
+
+        <Grid x:Name="choise" Grid.Row="2" Grid.Column="0">
+            <Button Content="Добавление" Margin="0,69,0,71"  Click="Button_Click_3"></Button>
+            <Button Content="Удаление" Height="71" VerticalAlignment="Bottom"  Click="Button_Click_2"/>
+            <Button Content="Изменение" Height="69" VerticalAlignment="Top"  Click="Button_Click_4"></Button>
+        </Grid>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\MyLib.dll.config
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\MyLib.dll
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\MyLib.pdb
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\EntityFramework.dll
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\EntityFramework.xml
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Полина\Desktop\test4\MyLib\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Полина\Desktop\test4\MyLib\obj\Debug\MyLib.csproj.AssemblyReference.cache
+C:\Users\Полина\Desktop\test4\MyLib\obj\Debug\MyLib.csproj.CoreCompileInputs.cache
+C:\Users\Полина\Desktop\test4\MyLib\obj\Debug\MyLib.csproj.CopyComplete
+C:\Users\Полина\Desktop\test4\MyLib\obj\Debug\MyLib.dll
+C:\Users\Полина\Desktop\test4\MyLib\obj\Debug\MyLib.pdb
